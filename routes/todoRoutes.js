@@ -23,3 +23,5 @@ router.delete("/:id", async (req, res) => {
   await Todo.findByIdAndDelete(req.params.id);
   res.json({ message: "Deleted" });
 });
+
+export default router;
